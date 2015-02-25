@@ -1,0 +1,290 @@
+
+/*Define All Variables */
+$bodyBackground: #F3EFE0;
+$secondBackground: #EADAA6;
+$white:#fff;
+$navbarColor: #2C303C;//#053F4D;//#122426;
+$navbarActive: #07596B;
+$hoverColor: #ccc;
+$footerColor: #122426;//#212F2B;
+$linkColor: #eee;
+$headerColor: #197368;//#22A39F;
+
+/* Put your CSS here */
+.full_container {
+	height:100%;
+	width:100%;
+}
+html {
+	@extend .full_container;
+}
+body {
+	@extend .full_container;
+	margin:0;
+	color: #434242;
+	font-family: sans-serif !important;
+	background: $bodyBackground;
+	font-size: 16px;
+	line-height: 1.64;
+}
+.loading-container {
+	height:100%;
+	width:100%;
+	background: url(../images/loading.gif) no-repeat 50%;
+	background-color: $footerColor;
+}
+h2 {
+	font-size: 54px;
+	text-align: center;
+}
+h3 {
+	font-weight: 300;
+	font-size:35px;
+	color: $headerColor;
+	text-align:center;
+}
+p {
+	margin: 0;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+.container {
+	max-width: 1280px;
+	padding: 40px 180px;
+}
+.row {
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	padding:0;
+}
+.background-second {
+	background-color: $secondBackground;
+}
+.background-footer {
+	background-color: $footerColor;
+}
+.generic-header-style {
+	float:left;
+	width:100%;
+}
+.award-class {
+	width:100%;
+}
+.site_tab {
+	position:fixed;
+	height:50px;
+	width:120px;
+	left:5%;
+	top:10px;
+	line-height: 50px;
+	color: $bodyBackground;
+	cursor:pointer;
+	text-align:center;
+	background-color: $navbarColor;
+	.site_name {
+		font-size:14px;
+		float:left;
+		margin:5px 0 0 45px;
+		height: 40px; 
+		color:$bodyBackground;
+		line-height: 20px;
+	}
+}
+.navbar-default {
+	background-color: $navbarColor !important;
+	border:none !important;
+}
+.navbar {
+	position: fixed;
+	top: 70px;
+	border: 0px;
+	background-color: $navbarColor !important;
+	left: 5%;
+	width: 120px;
+	z-index: 999;
+	.nav {
+		width:100%;
+		li {
+			display: block;
+			float: none;
+			height: 80px;
+			a {
+				display: block;
+				height: 80px;
+				text-align: center;
+				padding-top: 30px;
+				font-weight: 600;
+				color: $white !important;
+				padding-left:0;
+				padding-right:0;
+				background-color: $navbarColor !important;
+			}
+		}
+		li a:hover {
+			color: $hoverColor !important;
+		}
+		.active {
+			background: $navbarActive !important;
+			color: #FFFFFF !important;
+		}
+	}
+	.navbar-collapse {
+		padding: 0px;
+		max-height: none;
+	}
+}
+@media (max-width: 767px) {
+	.container {
+		padding: 60px 20px;
+		min-width: 280px;
+	}
+}
+@media (max-width: 767px) {
+	.navbar {
+		display:none;
+	}
+	.site_tab {
+		display:none;
+	}
+}
+#about {
+	img {
+		width: 100%;
+		max-width: 200px;
+		height: auto;
+	}
+	.about-header {
+		margin:0 0 50px 0;
+	}
+	.about-content {
+		margin-bottom: 50px;
+		margin-top:-25px;
+		h3 {
+			line-height: 0;
+			margin-bottom:40px;
+		}
+	}
+	.profile-name {
+		font-size: 40px;
+		@extend .generic-header-style;
+	}
+	.profile-desc {
+		font-size: 25px;
+		line-height:30px;
+		margin-bottom:20px;
+		@extend .generic-header-style;
+	}
+	.generic-header {
+		@extend .generic-header-style;
+		font-size:30px;
+	}
+	.project-list {
+		line-height: 40px;
+		.site-button {
+			float: left;
+			height:40px;
+			width:140px;
+			font-size: 13px;
+			margin-right:20px;
+			color: $bodyBackground;
+			cursor:pointer;
+			text-align:center;
+			background-color: $navbarColor;
+		}
+	}
+}
+#education {
+	.education-content {
+		margin:50px 0;
+	}
+	.education-row {
+		margin-top:20px;
+		.education-year {
+			padding-top: 8px;
+		}
+	}
+}
+#skills {
+	.skill-content {
+		margin:50px 0;
+	}
+	.skill-row {
+		margin-top:20px;
+	}
+}
+#projects {
+	.experience-content {
+		margin: 50px 0;
+	}
+	.experience-row {
+		margin-top:20px;
+	}
+}
+#achievements {
+	.achievements-row {
+		margin:50px 0;
+	}
+	ul {
+		margin-left: -25px;
+		li {
+			margin-top:10px;
+		}
+	}
+}
+#contact {
+	.contact-row {
+		margin:50px 0;
+	}
+	.contact-link {
+		float:left;
+		width:100%;
+		line-height:36px;
+	}
+	.contact-col {
+		margin-top:20px;
+		height:36px;
+		color: #ccc !important;
+	}
+	.contact-col:hover {
+		color: $white !important;
+	}
+	.icon {
+		float:left;
+		height:36px;
+		width:36px;
+	}
+	.icon-generic {
+		background-size:100%;
+	}
+	.icon-phone {
+		background: url(../images/phone.png) no-repeat;
+		@extend .icon-generic;
+	}
+	.icon-linkedin {
+		background: url(../images/linkedin.png) no-repeat;
+		@extend .icon-generic;
+	}
+	.icon-gmail {
+		background: url(../images/gmail.png) no-repeat;
+		@extend .icon-generic;
+	}
+	.icon-skype {
+		background: url(../images/skype.png) no-repeat;
+		@extend .icon-generic;
+	}
+	.icon-twitter {
+		background: url(../images/twitter.png) no-repeat;
+		@extend .icon-generic;
+	}
+	.icon-facebook {
+		background: url(../images/facebook.png) no-repeat;
+		@extend .icon-generic;
+	}
+	a {
+		text-decoration:inherit;
+	}
+}
