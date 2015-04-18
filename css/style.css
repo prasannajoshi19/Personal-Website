@@ -198,7 +198,7 @@ p {
   float: left;
   height: 36px;
   width: 36px; }
-#contact .icon-generic, #contact .icon-phone, #contact .icon-linkedin, #contact .icon-gmail, #contact .icon-skype, #contact .icon-twitter, #contact .icon-facebook {
+#contact .icon-generic, #contact .icon-phone, #contact .icon-linkedin, #contact .icon-gmail, #contact .icon-github, #contact .icon-twitter, #contact .icon-facebook {
   background-size: 100%; }
 #contact .icon-phone {
   background: url(../images/phone.png) no-repeat; }
@@ -206,8 +206,8 @@ p {
   background: url(../images/linkedin.png) no-repeat; }
 #contact .icon-gmail {
   background: url(../images/gmail.png) no-repeat; }
-#contact .icon-skype {
-  background: url(../images/skype.png) no-repeat; }
+#contact .icon-github {
+  background: url(../images/github.png) no-repeat; }
 #contact .icon-twitter {
   background: url(../images/twitter.png) no-repeat; }
 #contact .icon-facebook {
